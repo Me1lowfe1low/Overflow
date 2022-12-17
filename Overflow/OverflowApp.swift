@@ -11,7 +11,9 @@ import SwiftUI
 struct OverflowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }
