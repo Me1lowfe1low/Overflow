@@ -1,0 +1,11 @@
+[
+	{	
+		"name": "Choose the source to fill",
+		"description": "In this mode the player have a single vessel and multiple choices to be picked to fill the vessel. The more accurate the player fills the vessel - the more points would be gathered. If the player overpass the limits - no points would be acquired for this level"
+	}
+	,
+	{
+		"name": "Tap to fill",
+		"description": "In this mode the player will have a single vessel and an infinite source of water. The main objective of this game - fill the vessel until the mark to earn points. If the player overpass the limits - no points would be acquired for this level"
+	}
+]
