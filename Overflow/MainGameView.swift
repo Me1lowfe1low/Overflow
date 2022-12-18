@@ -27,8 +27,9 @@ struct MainGameView: View {
     }
 }
 
-struct MainGameView_Previews: PreviewProvider {
-    static var previews: some View {
+ struct MainGameView_Previews: PreviewProvider {
+     static var previews: some View {
         MainGameView()
     }
-}
+ }
+ 

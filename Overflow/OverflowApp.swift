@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct OverflowApp: App {
+    //@State var gameModes = Bundle.main.decode("DefaultGameModes")
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
