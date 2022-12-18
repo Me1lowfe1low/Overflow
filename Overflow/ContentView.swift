@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
             VStack {
                 // This section will hold and brief tutorial of the game. Not decided if it would be scrollable view or sliding view
-                ScrollView(.horizontal, showsIndicators: true) {
-                    HStack {
-                        imagePlaceholder
-                        imagePlaceholder
-                        imagePlaceholder
-                    }
-                }
+                TutorialView()
                 Spacer()
                 Section(header: Text("Choose your game")) {
                     List {
@@ -40,12 +36,7 @@ struct ContentView: View {
                 }
             }
     }
-    
-    var imagePlaceholder : some View {
-        Image("imageExample")
-            .resizable()
-            .aspectRatio(9/16, contentMode: .fit)
-    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
