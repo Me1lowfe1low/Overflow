@@ -13,6 +13,9 @@
 		5136EF8F294E0795002D8C75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5136EF8E294E0795002D8C75 /* Preview Assets.xcassets */; };
 		5136EF96294E149F002D8C75 /* GameOptionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF95294E149F002D8C75 /* GameOptionElement.swift */; };
 		5136EF98294E18E9002D8C75 /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF97294E18E9002D8C75 /* MainGameView.swift */; };
+		5136EF9A294E2755002D8C75 /* TotorialPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF99294E2755002D8C75 /* TotorialPageModel.swift */; };
+		5136EF9C294EFA96002D8C75 /* TutorialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */; };
+		5136EF9E294EFCF2002D8C75 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF9D294EFCF2002D8C75 /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		5136EF8E294E0795002D8C75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5136EF95294E149F002D8C75 /* GameOptionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptionElement.swift; sourceTree = "<group>"; };
 		5136EF97294E18E9002D8C75 /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
+		5136EF99294E2755002D8C75 /* TotorialPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotorialPageModel.swift; sourceTree = "<group>"; };
+		5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageView.swift; sourceTree = "<group>"; };
+		5136EF9D294EFCF2002D8C75 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				5136EF87294E0792002D8C75 /* OverflowApp.swift */,
 				5136EF89294E0792002D8C75 /* ContentView.swift */,
 				5136EF95294E149F002D8C75 /* GameOptionElement.swift */,
+				5136EF99294E2755002D8C75 /* TotorialPageModel.swift */,
+				5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */,
+				5136EF9D294EFCF2002D8C75 /* TutorialView.swift */,
 				5136EF97294E18E9002D8C75 /* MainGameView.swift */,
 				5136EF8B294E0795002D8C75 /* Assets.xcassets */,
 				5136EF8D294E0795002D8C75 /* Preview Content */,
@@ -143,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5136EF9E294EFCF2002D8C75 /* TutorialView.swift in Sources */,
 				5136EF8A294E0792002D8C75 /* ContentView.swift in Sources */,
+				5136EF9C294EFA96002D8C75 /* TutorialPageView.swift in Sources */,
+				5136EF9A294E2755002D8C75 /* TotorialPageModel.swift in Sources */,
 				5136EF96294E149F002D8C75 /* GameOptionElement.swift in Sources */,
 				5136EF88294E0792002D8C75 /* OverflowApp.swift in Sources */,
 				5136EF98294E18E9002D8C75 /* MainGameView.swift in Sources */,
