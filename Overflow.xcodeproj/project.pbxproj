@@ -20,6 +20,7 @@
 		5136EFA2294F3844002D8C75 /* DefaultGameModes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5136EFA1294F3843002D8C75 /* DefaultGameModes.json */; };
 		5136EFA4294F38CB002D8C75 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA3294F38CB002D8C75 /* JsonDecoder.swift */; };
 		5136EFA6294F3FE2002D8C75 /* SecondGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */; };
+		5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA72950A3A4002D8C75 /* VesselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5136EFA1294F3843002D8C75 /* DefaultGameModes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultGameModes.json; sourceTree = "<group>"; };
 		5136EFA3294F38CB002D8C75 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 		5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGameView.swift; sourceTree = "<group>"; };
+		5136EFA72950A3A4002D8C75 /* VesselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				5136EF99294E2755002D8C75 /* TotorialPageModel.swift */,
 				5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */,
 				5136EF9D294EFCF2002D8C75 /* TutorialView.swift */,
+				5136EFA72950A3A4002D8C75 /* VesselView.swift */,
 				5136EF97294E18E9002D8C75 /* MainGameView.swift */,
 				5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */,
 				5136EF8B294E0795002D8C75 /* Assets.xcassets */,
@@ -174,6 +177,7 @@
 				5136EFA0294F3728002D8C75 /* GameOptionModel.swift in Sources */,
 				5136EF96294E149F002D8C75 /* GameOptionElement.swift in Sources */,
 				5136EF88294E0792002D8C75 /* OverflowApp.swift in Sources */,
+				5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */,
 				5136EF98294E18E9002D8C75 /* MainGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,12 @@ import SwiftUI
 struct MainGameView: View {
     var body: some View {
             VStack {
-                RoundedRectangle(cornerRadius: 4.0)
-                    .stroke(lineWidth: 2.0)
-                    .aspectRatio(3/4, contentMode: .fill)
+                ZStack{
+                    RoundedRectangle(cornerRadius: 4.0)
+                        .stroke(lineWidth: 2.0)
+                        .aspectRatio(3/4, contentMode: .fill)
+                    Vessel()
+                }
                 Spacer()
                 HStack {
                     // Where should be the area with dragable objects
