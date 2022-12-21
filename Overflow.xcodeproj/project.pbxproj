@@ -22,6 +22,8 @@
 		5136EFA6294F3FE2002D8C75 /* SecondGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */; };
 		5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA72950A3A4002D8C75 /* VesselView.swift */; };
 		5136EFAA2950D876002D8C75 /* WaterFlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA92950D875002D8C75 /* WaterFlowModel.swift */; };
+		51F4FE2C295331F900721765 /* WaterContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE2B295331F900721765 /* WaterContainerView.swift */; };
+		51F4FE2E2953322D00721765 /* WaterContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE2D2953322D00721765 /* WaterContainerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGameView.swift; sourceTree = "<group>"; };
 		5136EFA72950A3A4002D8C75 /* VesselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselView.swift; sourceTree = "<group>"; };
 		5136EFA92950D875002D8C75 /* WaterFlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowModel.swift; sourceTree = "<group>"; };
+		51F4FE2B295331F900721765 /* WaterContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterContainerView.swift; sourceTree = "<group>"; };
+		51F4FE2D2953322D00721765 /* WaterContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterContainerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				5136EFA72950A3A4002D8C75 /* VesselView.swift */,
 				5136EFA92950D875002D8C75 /* WaterFlowModel.swift */,
 				5136EF97294E18E9002D8C75 /* MainGameView.swift */,
+				51F4FE2D2953322D00721765 /* WaterContainerModel.swift */,
+				51F4FE2B295331F900721765 /* WaterContainerView.swift */,
 				5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */,
 				5136EF8B294E0795002D8C75 /* Assets.xcassets */,
 				5136EF8D294E0795002D8C75 /* Preview Content */,
@@ -180,8 +186,10 @@
 				5136EFA0294F3728002D8C75 /* GameOptionModel.swift in Sources */,
 				5136EF96294E149F002D8C75 /* GameOptionElement.swift in Sources */,
 				5136EFAA2950D876002D8C75 /* WaterFlowModel.swift in Sources */,
+				51F4FE2E2953322D00721765 /* WaterContainerModel.swift in Sources */,
 				5136EF88294E0792002D8C75 /* OverflowApp.swift in Sources */,
 				5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */,
+				51F4FE2C295331F900721765 /* WaterContainerView.swift in Sources */,
 				5136EF98294E18E9002D8C75 /* MainGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

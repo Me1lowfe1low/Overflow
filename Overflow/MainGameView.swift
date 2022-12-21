@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct MainGameView: View {
-    @State var currentWaterLevel: CGFloat = 0.99
+    @State var currentWaterLevel: CGFloat = 0.6
     @State var vesselSize: CGFloat = 0.5
+    @State var conteinersWithWater: [WaterContainerModel] = [WaterContainerModel(imageURL: "Bottle_00"),WaterContainerModel(imageURL: "Bottle_01"),WaterContainerModel(imageURL: "Bottle_02"),WaterContainerModel(imageURL: "Bottle_03"),WaterContainerModel(imageURL: "Bottle_04")]
+    @State private var offset = CGSize.zero
+    @State private var selected: WaterContainerModel? = nil
     
     var body: some View {
             VStack {
@@ -22,7 +25,7 @@ struct MainGameView: View {
                     Vessel(vesselHeighRatio: vesselSize)
                         .stroke(.black,style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
                    WaterFlow(fillProgress: currentWaterLevel, vesselSizeRatio: vesselSize)
-                        .fill(Color.blue).opacity(0.6)
+                        .fill(Color.blue).opacity(0.2)
                         .mask {
                             Vessel(vesselHeighRatio: vesselSize)
                         }
@@ -32,9 +35,10 @@ struct MainGameView: View {
                 HStack {
                     // Where should be the area with dragable objects
                     // Once we'll choose the object and drop it to the area above - there would be calculation of object
-                    RoundedRectangle(cornerRadius: 4.0)
-                    RoundedRectangle(cornerRadius: 4.0)
-                    RoundedRectangle(cornerRadius: 4.0)
+                        ForEach(conteinersWithWater) { waterContainer in
+                            WaterContainerView(waterContainer: waterContainer)
+                    }
+                    
                 }
                 Button(action: {print("Continue")} , label: {Text("Continue")})
             }
