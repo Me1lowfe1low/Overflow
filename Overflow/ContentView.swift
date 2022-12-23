@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var gameModes = Bundle.main.decode("DefaultGameModes")
+    @State var gameModes: [GameOption] = Bundle.main.decode("DefaultGameModes.json")
+    @State private var mainGameObject = MainGameViewModel(gameMode: gameModeList.mainGame)
+    
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,9 +19,8 @@ struct ContentView: View {
                     Spacer()
                     ForEach(gameModes) { gameModeDetailed in
                         NavigationLink(destination: {
-                            // Checking for the mode name, possibly I'll use enum futher but not this time
-                            gameModeDetailed.name == "Tap to fill" ?
-                            AnyView(SecondGameView()) : AnyView(MainGameView())
+                            gameModeList.mainGame == .mainGame ?
+                            AnyView(MainGameView(gameData: $mainGameObject)) : AnyView(SecondGameView())
                         }
                         ) {
                             // I'll change description to be brief and concise

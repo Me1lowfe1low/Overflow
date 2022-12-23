@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct WaterContainerView: View {
-    var waterContainer: WaterContainerModel
-    
+    let waterContainer: WaterContainerModel
     @State private var offset = CGSize.zero
+    var removal: (() -> Void)? = nil
+    var increaseWaterLevel: (() -> Void)? = nil
     
     var body: some View {
         Image(waterContainer.imageURL)
@@ -25,15 +26,16 @@ struct WaterContainerView: View {
                     .onEnded {_ in
                         if offset.height < 50 {
                             print("Water level increased")
+                            removal?()
+                            increaseWaterLevel?()
+                            offset = .zero
                         } else {
                             offset = .zero
                         }
-                        
                     }
             )
     }
 }
-
 
 struct WaterContainerView_Previews: PreviewProvider {
     static var previews: some View {

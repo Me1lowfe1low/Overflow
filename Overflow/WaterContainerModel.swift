@@ -6,11 +6,12 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct WaterContainerModel: Identifiable {
+struct WaterContainerModel: Identifiable, Codable {
     let id = UUID()
-    let imageURL: String
+    var imageURL: String
+    var containerVolume: CGFloat
     
-    static var containerSample = WaterContainerModel(imageURL: "Bottle_01")
+    static var containerSample = WaterContainerModel(imageURL: "Bottle_01", containerVolume: 0.1)
 }
+

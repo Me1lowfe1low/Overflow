@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GameOption: Identifiable, Decodable {
+struct GameOption: Identifiable, Codable {
     let id = UUID()
     var name: String
     var description: String

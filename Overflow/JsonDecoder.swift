@@ -9,29 +9,24 @@
 import Foundation
 
 extension Bundle {
-    func decode(_ filename: String) -> [GameOption] {
+    func decode<T: Codable>(_ filename: String) -> T {
         // Finding file
-        guard let exampleURL = self.url(forResource: filename, withExtension: "json") else {
-        fatalError("Couldn't find \(filename) in the bundle folder")
+        guard let url = self.url(forResource: filename, withExtension: nil) else {
+            fatalError("Couldn't find \(filename) in the bundle folder")
         }
         
         //Gathering content of the file in the data object
-        guard let dataObject = try? Data(contentsOf: exampleURL) else {
+        guard let dataObject = try? Data(contentsOf: url) else {
             fatalError("Couldn't recieve data from \(filename)")
         }
-        
+    
         let decoder = JSONDecoder()
         
         //File couldn't be decoded - crash
-        guard let samplesOfTests = try? decoder.decode([GameOption].self, from: dataObject) else {
-            fatalError("Couldn't decode data from the 'JsonExample.json'")
+        guard let loaded = try? decoder.decode(T.self, from: dataObject) else {
+            fatalError("Couldn't decode data from the \(filename)")
         }
         
-        return samplesOfTests
+        return loaded
     }
-    
-    
-    
-    
-    
 }
