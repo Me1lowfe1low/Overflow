@@ -12,14 +12,15 @@ struct TutorialPageView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Image("\(tutorialPage.imageURL)")
+            Image(tutorialPage.imageURL)
                 .resizable()
                 .scaledToFit()
                 .aspectRatio(9/16, contentMode: .fill)
+                .cornerRadius(40.0)
                 .padding()
-            
-            Text("\(tutorialPage.name)")
-                .font(.title)
+            //Text(tutorialPage.description)
+            //    .font(.subheadline)
+            //Spacer()
         }
     }
 }

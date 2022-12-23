@@ -16,19 +16,19 @@ struct TutorialView: View {
         TabView(selection: $tutorialPageIndex) {
             ForEach(tutorialPages) { page in
                 VStack {
-                    Spacer()
                     TutorialPageView(tutorialPage: page)
                     Spacer()
+                    Divider()
                     //page == tutorialPages.last ? Button("Start Over", action: startTutorialOver) : Button("Next", action: nextTutorialPage)
                     //Spacer()
                 }
                 .tag(page.tag)
-                
             }
         }
         .animation(.easeOut, value: tutorialPageIndex)
+        //.tabViewStyle(.page(indexDisplayMode: .never))
         .tabViewStyle(.page)
-        .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+        .indexViewStyle(.page(backgroundDisplayMode: .always))
         .onAppear {
             dotSlideMenu.currentPageIndicatorTintColor = .black
             dotSlideMenu.pageIndicatorTintColor = .gray

@@ -16,6 +16,17 @@
 		5136EF9A294E2755002D8C75 /* TotorialPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF99294E2755002D8C75 /* TotorialPageModel.swift */; };
 		5136EF9C294EFA96002D8C75 /* TutorialPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */; };
 		5136EF9E294EFCF2002D8C75 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF9D294EFCF2002D8C75 /* TutorialView.swift */; };
+		5136EFA0294F3728002D8C75 /* GameOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EF9F294F3728002D8C75 /* GameOptionModel.swift */; };
+		5136EFA2294F3844002D8C75 /* DefaultGameModes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5136EFA1294F3843002D8C75 /* DefaultGameModes.json */; };
+		5136EFA4294F38CB002D8C75 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA3294F38CB002D8C75 /* JsonDecoder.swift */; };
+		5136EFA6294F3FE2002D8C75 /* SecondGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */; };
+		5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA72950A3A4002D8C75 /* VesselView.swift */; };
+		5136EFAA2950D876002D8C75 /* WaterFlowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136EFA92950D875002D8C75 /* WaterFlowModel.swift */; };
+		51F4FE2C295331F900721765 /* WaterContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE2B295331F900721765 /* WaterContainerView.swift */; };
+		51F4FE2E2953322D00721765 /* WaterContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE2D2953322D00721765 /* WaterContainerModel.swift */; };
+		51F4FE302954745E00721765 /* MainGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE2F2954745E00721765 /* MainGameViewModel.swift */; };
+		51F4FE322955A14100721765 /* GameModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4FE312955A14100721765 /* GameModes.swift */; };
+		51F4FE382955C1A800721765 /* ContainerInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 51F4FE372955C1A800721765 /* ContainerInfo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,17 @@
 		5136EF99294E2755002D8C75 /* TotorialPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotorialPageModel.swift; sourceTree = "<group>"; };
 		5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageView.swift; sourceTree = "<group>"; };
 		5136EF9D294EFCF2002D8C75 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		5136EF9F294F3728002D8C75 /* GameOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOptionModel.swift; sourceTree = "<group>"; };
+		5136EFA1294F3843002D8C75 /* DefaultGameModes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultGameModes.json; sourceTree = "<group>"; };
+		5136EFA3294F38CB002D8C75 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondGameView.swift; sourceTree = "<group>"; };
+		5136EFA72950A3A4002D8C75 /* VesselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VesselView.swift; sourceTree = "<group>"; };
+		5136EFA92950D875002D8C75 /* WaterFlowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterFlowModel.swift; sourceTree = "<group>"; };
+		51F4FE2B295331F900721765 /* WaterContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterContainerView.swift; sourceTree = "<group>"; };
+		51F4FE2D2953322D00721765 /* WaterContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterContainerModel.swift; sourceTree = "<group>"; };
+		51F4FE2F2954745E00721765 /* MainGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameViewModel.swift; sourceTree = "<group>"; };
+		51F4FE312955A14100721765 /* GameModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModes.swift; sourceTree = "<group>"; };
+		51F4FE372955C1A800721765 /* ContainerInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContainerInfo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +86,21 @@
 				5136EF87294E0792002D8C75 /* OverflowApp.swift */,
 				5136EF89294E0792002D8C75 /* ContentView.swift */,
 				5136EF95294E149F002D8C75 /* GameOptionElement.swift */,
+				5136EF9F294F3728002D8C75 /* GameOptionModel.swift */,
+				51F4FE2D2953322D00721765 /* WaterContainerModel.swift */,
+				51F4FE372955C1A800721765 /* ContainerInfo.json */,
+				5136EFA1294F3843002D8C75 /* DefaultGameModes.json */,
+				5136EFA3294F38CB002D8C75 /* JsonDecoder.swift */,
 				5136EF99294E2755002D8C75 /* TotorialPageModel.swift */,
 				5136EF9B294EFA96002D8C75 /* TutorialPageView.swift */,
 				5136EF9D294EFCF2002D8C75 /* TutorialView.swift */,
+				5136EFA72950A3A4002D8C75 /* VesselView.swift */,
+				5136EFA92950D875002D8C75 /* WaterFlowModel.swift */,
 				5136EF97294E18E9002D8C75 /* MainGameView.swift */,
+				51F4FE2F2954745E00721765 /* MainGameViewModel.swift */,
+				51F4FE312955A14100721765 /* GameModes.swift */,
+				51F4FE2B295331F900721765 /* WaterContainerView.swift */,
+				5136EFA5294F3FE2002D8C75 /* SecondGameView.swift */,
 				5136EF8B294E0795002D8C75 /* Assets.xcassets */,
 				5136EF8D294E0795002D8C75 /* Preview Content */,
 			);
@@ -140,6 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5136EFA2294F3844002D8C75 /* DefaultGameModes.json in Resources */,
+				51F4FE382955C1A800721765 /* ContainerInfo.json in Resources */,
 				5136EF8F294E0795002D8C75 /* Preview Assets.xcassets in Resources */,
 				5136EF8C294E0795002D8C75 /* Assets.xcassets in Resources */,
 			);
@@ -152,12 +187,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5136EFA6294F3FE2002D8C75 /* SecondGameView.swift in Sources */,
+				51F4FE302954745E00721765 /* MainGameViewModel.swift in Sources */,
 				5136EF9E294EFCF2002D8C75 /* TutorialView.swift in Sources */,
 				5136EF8A294E0792002D8C75 /* ContentView.swift in Sources */,
+				5136EFA4294F38CB002D8C75 /* JsonDecoder.swift in Sources */,
 				5136EF9C294EFA96002D8C75 /* TutorialPageView.swift in Sources */,
 				5136EF9A294E2755002D8C75 /* TotorialPageModel.swift in Sources */,
+				5136EFA0294F3728002D8C75 /* GameOptionModel.swift in Sources */,
 				5136EF96294E149F002D8C75 /* GameOptionElement.swift in Sources */,
+				5136EFAA2950D876002D8C75 /* WaterFlowModel.swift in Sources */,
+				51F4FE2E2953322D00721765 /* WaterContainerModel.swift in Sources */,
 				5136EF88294E0792002D8C75 /* OverflowApp.swift in Sources */,
+				51F4FE322955A14100721765 /* GameModes.swift in Sources */,
+				5136EFA82950A3A4002D8C75 /* VesselView.swift in Sources */,
+				51F4FE2C295331F900721765 /* WaterContainerView.swift in Sources */,
 				5136EF98294E18E9002D8C75 /* MainGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

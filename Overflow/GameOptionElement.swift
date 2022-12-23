@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct GameOptionElement: View {
+    var gameMode: GameOption
+    
     var body: some View {
         VStack {
-            Text("Game Option Name")
+            Text(gameMode.name)
             Divider()
                 .padding(.horizontal)
             HStack {
-                Text("Some information describing this game option")
+                Text(gameMode.description)
             }
             .font(.caption)
         }
@@ -23,6 +25,6 @@ struct GameOptionElement: View {
 
 struct GameOptionElement_Previews: PreviewProvider {
     static var previews: some View {
-        GameOptionElement()
+        GameOptionElement(gameMode: GameOption.sampleGameMode)
     }
 }

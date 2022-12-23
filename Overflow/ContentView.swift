@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var gameModes: [GameOption] = Bundle.main.decode("DefaultGameModes.json")
+    @State private var mainGameObject = MainGameViewModel(gameMode: gameModeList.mainGame)
     
     
     var body: some View {
-            VStack {
-                // This section will hold and brief tutorial of the game. Not decided if it would be scrollable view or sliding view
+        VStack(alignment: .leading) {
                 TutorialView()
-                Spacer()
-                Section(header: Text("Choose your game")) {
-                    List {
-                        NavigationLink(destination: MainGameView()) { GameOptionElement()
+                Section(header:  Text("GAME OPTIONS:").font(.caption)) {
+                    Spacer()
+                    ForEach(gameModes) { gameModeDetailed in
+                        NavigationLink(destination: {
+                            gameModeList.mainGame == .mainGame ?
+                            AnyView(MainGameView(gameData: $mainGameObject)) : AnyView(SecondGameView())
                         }
-                        GameOptionElement()
+                        ) {
+                            // I'll change description to be brief and concise
+                            GameOptionElement(gameMode: gameModeDetailed)
+                        }
                     }
                 }
-                
             }
             .padding()
             .navigationBarTitle("App Name", displayMode: .inline)
@@ -36,7 +41,6 @@ struct ContentView: View {
                 }
             }
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
